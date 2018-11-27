@@ -33,7 +33,7 @@ function on_touch(e)
 		last_position.x = e.changedTouches.item(i).pageX;		
 		last_position.y = e.changedTouches.item(i).pageY;
 		last_position.id = e.changedTouches.item(i).identifier;
-		last_position_array.push(lasta_position);
+		last_position_array.push(last_position);
 	}
 }
 //---------------------------------
