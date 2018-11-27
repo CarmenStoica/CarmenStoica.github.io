@@ -8,8 +8,10 @@ canvas.addEventListener("touchmove", on_touch_move);
 var rect = canvas.getBoundingClientRect();
 //---------------------------------
 
-var lastX = 0;
-var lastY = 0;
+//var lastX = 0;
+//var lastY = 0;
+
+var last_position=(x:0, y:0);
 
 function on_touch(e)
 {
@@ -24,8 +26,8 @@ function on_touch(e)
 					0, 2 * Math.PI
 					);
 		context.stroke();
-		lastX = e.changedTouches.item(i).pageX;		
-		lastY = e.changedTouches.item(i).pageY;		
+		last_position.x = e.changedTouches.item(i).pageX;		
+		last_position.y = e.changedTouches.item(i).pageY;		
 	}
 }
 //---------------------------------
@@ -50,8 +52,8 @@ function on_touch_move(e)
 		context.lineTo(e.changedTouches.item(i).pageX - rect.left, 
 						e.changedTouches.item(i).pageY - rect.top);
 
-		lastX = e.changedTouches.item(i).pageX;		
-		lastY = e.changedTouches.item(i).pageY;		
+		last_position.x = e.changedTouches.item(i).pageX;		
+		last_position.y = e.changedTouches.item(i).pageY;		
 		context.stroke();			
 	}	
 }
