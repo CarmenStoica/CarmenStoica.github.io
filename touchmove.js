@@ -1,10 +1,10 @@
-document.getElementById("id_logic_version").innerHTML = "Logic: 2019.01.08.3";
+document.getElementById("id_logic_version").innerHTML = "Logic: 2019.01.08.4";
 var svg = document.getElementById("id_svg");
 var cerc1 = document.getElementById("id_circle1");
 var cerc2 = document.getElementById("id_circle2");
 
 cerc1.addEventListener("touchmove", on_touch_move1);
-cerc2.addEventListener("touchmove", on_touch_move1);
+cerc2.addEventListener("touchmove", on_touch_move2);
 
 var svg_rect = svg.getBoundingClientRect();
 
