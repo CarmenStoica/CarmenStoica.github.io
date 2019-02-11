@@ -1,27 +1,17 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
+  <html>
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Weather </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     </head>
 
-<html>
-
-
-<head>
-  
-<title>Pagina persoanala </title>
-</head>
-  
-
-<body>
-  <h1> Prima sectiune</h1>
-  
-<p id ="id_Salut"> Salut </p>
-  
-   <h1> A doua sectiune</h1>
-  
- <img id="id_img" src="cal.jpg" alt="Pasari">
-  
-  
-  <button type="button" onclick="modifica()">Apasa</button>
-  
-  <script src="program.js"></script>
-      
-  </body>
+     <body>
+	 <p>UI version:2019.02.11.0</p>
+	 <p id = "id_logic_version"></p>
+        <h1><div id="temp"></div><div id="minutely"></div></h1>
+        <h2><div id="location"></div></h2>
+     </body>
+     <script src="app.js"></script>
   </html>
